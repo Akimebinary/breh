@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloons Effect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <span class="letter">H</span>
+        <span class="letter">A</span>
+        <span class="letter">P</span>
+        <span class="letter">P</span>
+        <span class="letter">Y</span>
+        <span class="letter"> </span>
+        <span class="letter">B</span>
+        <span class="letter">I</span>
+        <span class="letter">R</span>
+        <span class="letter">T</span>
+        <span class="letter">H</span>
+        <span class="letter">D</span>
+        <span class="letter">A</span>
+        <span class="letter">Y</span>
+        <span class="letter">!</span>
+    </div>
+
+    <div class="video-container">
+        <video autoplay loop muted class="background-video"> <!-- Start muted for autoplay -->
+            <source src="send this to your friend if it's their birthday.mp4" type="video/mp4"> <!-- Ensure this path is correct -->
+            Your browser does not support the video tag.
+        </video>
+        <button class="unmute-button" onclick="toggleMute()">Unmute</button> <!-- Button to unmute -->
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        function toggleMute() {
+            const video = document.querySelector('.background-video');
+            video.muted = !video.muted; // Toggle mute state
+        }
+    </script>
+</body>
+</html>
